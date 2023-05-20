@@ -5,11 +5,11 @@ We initialize the coefficient variable to 1 at the start of each row. We then pr
 we update it for the next column using the formula coefficient = coefficient * (i - j) / (j + 1). This formula calculates the current coefficient based on the previous coefficient.
 The line System.out.printf("%" + (rows - i) * 2 + "s", ""); is used to add spacing at the beginning of each row to create the triangular shape of Pascal's Triangle. The number of spaces is determined by (rows - i) * 2.
 When you run this code, it will output the following Pascal's Triangle:
-         1
-       1   1
-     1   2   1
-   1   3   3   1
- 1   4   6   4   1
+first row :        1 
+second row :     1   1  
+third row :     1   2   1 
+four row :   1   3   3   1
+five row :  1   4   6   4   1
  
 # using reursion
 In this code, the calculateCoefficient method is a recursive function that takes the row and column indices as parameters and returns the coefficient. If the column is either 0 or equal to the row, we know it is an edge case and the coefficient is 1. Otherwise, we recursively calculate the coefficient by summing the coefficients from the previous row.
